@@ -1,31 +1,25 @@
-const h1 = document.querySelector('h1');     //Para seleccionar por el nombre de la etiqueta
-const parrafo = document.querySelector('p'); //Para seleccionar por el nombre de la etiqueta
-const parrafito = document.querySelector('.parrafito'); //Para seleccionar una clase
-const pid = document.querySelector('#pid'); //Para seleccionar un id
-const input = document.querySelector('input'); //Para seleccionar por el nombre de la etiqueta
+const h1 = document.querySelector('h1');
+const input1 = document.querySelector('#calculo1');
+const input2 = document.querySelector('#calculo2');
+const btn = document.querySelector('#btncalcularSuma');
+const pResult = document.querySelector('#result');
 
-console.log(input.value);
+function btnOnClickSuma(){
+    const sumaInputs = (Number(input1.value) + Number(input2.value));
+    pResult.innerText = "El resultado es: " + sumaInputs; 
+}
 
-console.log({
-    h1,
-    parrafo,
-    parrafito,
-    pid,
-    input,
-})
+function btnOnClickResta(){
+    const restaInputs = (Number(input1.value) - Number(input2.value));
+    pResult.innerText = "El resultado es: " + restaInputs;
+}
 
-// h1.innerHTML = "Patito  <br> bonito";
-// h1.innerText = "Patito <br> bonito";
-// console.log(h1.getAttribute('class'));
-// h1.setAttribute('class','rojo');
-h1.classList.add('rojo');
-h1.classList.remove('verde');
+function btnOnClickMultiplicacion(){
+    const multiplicacionInputs = (Number(input1.value) * Number(input2.value));
+    pResult.innerText = "El resultado es: " + multiplicacionInputs;
+}
 
-input.value = "234";
-
-const img = document.createElement('img');
-img.setAttribute('src', 'https://static.platzi.com/static/images/conf/logo_black@2x.png');
-console.log(img);
-
-pid.innerHTML = "";
-pid.appendChild(img);
+function btnOnClickDivision(){
+    const divisionInputs = (Number(input1.value) / Number(input2.value));
+    pResult.innerText = "El resultado es: " + divisionInputs;
+}
