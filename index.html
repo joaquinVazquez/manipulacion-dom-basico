@@ -9,14 +9,16 @@
 <body>
     <h1>Manipulación del DOM básico</h1>
     
-    <input type="number" id="calculo1" placeholder="Escribe algo acá">
-    <input type="number" id="calculo2" placeholder="Escribe algo acá">
-    <button id="btncalcularSuma" onclick="btnOnClickSuma()">Suma</button>
-    <button id="btncalcularResta" onclick="btnOnClickResta()">Resta</button>
-    <button id="btncalcularMultiplicacion" onclick="btnOnClickMultiplicacion()">Multiplica</button>
-    <button id="btncalcularDivision" onclick="btnOnClickDivision()">Divide</button>
-
+    <form action="" id="form">
+        <input type="number" id="calculo1" placeholder="Escribe algo acá">
+        <input type="number" id="calculo2" placeholder="Escribe algo acá">
+        
+        <button id="btncalcularSuma" type="button">Suma</button>
+        <button id="btncalcularResta" type="button">Resta</button>
+        <button id="btncalcularMultiplicacion" type="button">Multiplica</button>
+        <button id="btncalcularDivision" type="button">Divide</button>
     <p id="result"></p>
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
